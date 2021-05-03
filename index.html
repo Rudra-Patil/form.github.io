@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Bank Form</title>
+</head>
+<body style="background-color: #000000">
+  <header>
+    <h1 style="color: #ffdb00">Loan Application</h1>
+  </header>
+  <form>
+    <h2>Sign Up</h2>
+    <fieldset>
+      <label class="hidden" for="firstName">First Name</label>
+      <input type="text" required name="firstName" placeholder="First Name" id="firstName">
+
+      <label class="hidden" for="lastName">Last Name</label>
+      <input type="text" required name="lastName" placeholder="Last Name" id="lastName">
+
+      <label class="hidden" for="address">Address</label>
+      <input type="text" required name="address" placeholder="Address" id="address">
+
+      <label class="hidden" for="occupation">Occupation</label>
+      <input type="text" required name="occupation" placeholder="Occupation" id="occupation">
+
+      <label class="hidden" for="employer">Employer</label>
+      <input type="text" required name="employer" placeholder="Employer" id="employer">
+    </fieldset>
+
+    <fieldset>
+      <label for="loanType">Loan Type:</label>
+          <select id="loanType" name="loanType">
+            <optgroup label="">
+              <option value="commercial">Commercial</option>
+              <option value="realEstate">Real Estate</option>
+              <option value="personal">Personal</option>
+              <option value="mortgage">Mortgage</option>
+            </optgroup>
+          </select>
+
+      <label class="hidden" for="loanAmount">Loan Amount</label>
+      <input type="number" required name="loanAmount" placeholder="Loan Amount" id="loanAmount">
+    </fieldset>
+
+    <fieldset>
+      <label>Loan Length: </label>
+        <label for="length_5">5 Years</label>
+        <input type="radio" checked value="length" name="length" id="length">
+
+        <label for="length_15">15 Years</label>
+        <input type="radio" required value="length" name="length" id="length">
+
+        <label for="length_30">30 Years</label>
+        <input type="radio" value="length" name="length" id="length">
+    </fieldset>
+
+    <fieldset class="conditions">
+      <label>Special Conditions: </label>
+        <div>          
+          <label for="haveDownPayment">I have a down payment</label>
+          <input type="checkbox" value="haveDownPayment" id="haveDownPayment" name="haveDownPayment">
+        </div>
+        <div>
+          <label for="outOfState">Out-of-state resident</label>
+          <input type="checkbox" value="outOfState" id="outOfState" name="outOfState">
+        </div>
+        <div>
+          <label for="married">Married</label>
+          <input type="checkbox" value="married" id="married" name="married">
+        </div>
+        <div>
+          <label for="coSign">Loan will be co-signed</label>
+          <input type="checkbox" value="coSign" id="coSign" name="coSign">
+        </div>
+    </fieldset>
+
+    <fieldset>
+      
+
+      <label class="hidden" for="email">Email</label>
+      <input type="email" required name="email" placeholder="Email" id="email">
+
+      <label class="hidden" for="telephone">Telephone Number</label>
+      <input type="tel" required name="telephone" placeholder="Telephone Number" id="telephone">
+
+    </fieldset>
+    <div class="buttonwrap">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+</body>
+</html>
